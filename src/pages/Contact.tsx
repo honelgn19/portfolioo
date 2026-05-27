@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, Mail, User, MessageSquare } from 'lucide-react';
+import { Send, Mail, User, MessageSquare, Phone } from 'lucide-react';
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -212,6 +212,16 @@ const Contact = () => {
                   <div>
                     <p className="font-medium">Telegram</p>
                     <p className="text-sm text-gray-400">Quick chat</p>
+                  </div>
+                </a>
+                {/* New: Telephone */}
+                <a href="tel:+251911234567" className="flex items-center gap-4 p-5 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#C0C0C0]/30 rounded-2xl transition-all group">
+                  <div className="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center group-hover:bg-[#C0C0C0]/10">
+                    <Phone size={26} className="text-[#C0C0C0]" />
+                  </div>
+                  <div>
+                    <p className="font-medium">Call Me</p>
+                    <p className="text-sm text-gray-400">+251 937 991 885 </p>
                   </div>
                 </a>
               </div>

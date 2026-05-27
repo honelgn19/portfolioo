@@ -46,7 +46,7 @@ const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <a
-              href="#contact"
+              href="https://t.me/kebron1921"
               className="px-6 py-2.5 bg-[#C0C0C0] text-black font-semibold rounded-full hover:bg-white transition-all duration-300 hover:scale-105"
             >
               Get In Touch
@@ -82,8 +82,9 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="#contact"
-              onClick={() => setIsOpen(false)}
+              href="https://t.me/kebron1921"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-4 px-6 py-3 bg-[#C0C0C0] text-black font-semibold rounded-full text-center"
             >
               Contact Me
