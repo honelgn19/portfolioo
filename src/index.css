@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 18 18 18;
+    --foreground: 245 245 245;
+    --card: 18 18 18;
+    --card-foreground: 245 245 245;
+    --border: 39 39 42;
+    --input: 39 39 42;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+/* Fix for dark mode */
+.dark {
+  --background: 18 18 18;
+  --foreground: 245 245 245;
+}
