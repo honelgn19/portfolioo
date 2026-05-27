@@ -27,12 +27,12 @@ const Hero = () => {
               </span>
             </div>
 
-            <h1 className="text-6xl md:text-7xl font-bold tracking-tighter leading-tight">
-              Hi, I'm{" "}
-              <span className="bg-gradient-to-r from-[#C0C0C0] to-[#D9D9D9] bg-clip-text text-transparent">
-                Honelgn
-              </span>
-            </h1>
+       <h1 className="text-6xl md:text-7xl font-bold tracking-tighter leading-tight text-zinc-100">
+  Hi, I'm{" "}
+  <span className="bg-gradient-to-r from-white via-[#D9D9D9] to-[#A8A8A8] bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(255,255,255,0.15)]">
+    Honelgn
+  </span>
+</h1>
 
             <h2 className="text-3xl md:text-4xl text-gray-400 font-medium">
               Full-Stack Developer &amp; ERP Systems Specialist
@@ -68,7 +68,7 @@ const Hero = () => {
             {/* Social Links */}
             <div className="flex gap-6 pt-6">
               <a
-                href="https://github.com"
+                href="https://github.com/honelgn19"
                 target="_blank"
                 className="text-gray-400 hover:text-[#C0C0C0] transition-colors"
               >
@@ -89,7 +89,7 @@ const Hero = () => {
                 </svg>
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/honelgn-metaferiya-b8876237a"
                 target="_blank"
                 className="text-gray-400 hover:text-[#C0C0C0] transition-colors"
               >
@@ -111,7 +111,7 @@ const Hero = () => {
                 </svg>
               </a>
               <a
-                href="https://t.me"
+                href="https://t.me/kebron1921"
                 target="_blank"
                 className="text-gray-400 hover:text-[#C0C0C0] transition-colors"
               >
