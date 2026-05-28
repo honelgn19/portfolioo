@@ -82,13 +82,13 @@ const About = () => {
             <div className="absolute -bottom-8 -left-6 bg-[#1A1A1A] border border-white/10 backdrop-blur-xl rounded-2xl p-7 shadow-2xl">
               <div className="flex gap-10">
                 <div>
-                  <p className="text-4xl font-bold text-[#C0C0C0]">5+</p>
+                  <p className="text-4xl font-bold text-[#C0C0C0]">2+</p>
                   <p className="text-xs text-gray-400 tracking-widest">
                     YEARS EXP
                   </p>
                 </div>
                 <div>
-                  <p className="text-4xl font-bold text-[#C0C0C0]">20+</p>
+                  <p className="text-4xl font-bold text-[#C0C0C0]">7+</p>
                   <p className="text-xs text-gray-400 tracking-widest">
                     PROJECTS
                   </p>

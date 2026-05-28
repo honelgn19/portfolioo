@@ -17,12 +17,12 @@ const Skills = () => {
     {
       title: "Database & Cloud",
       icon: Database,
-      skills: ["MongoDB", "Firebase", "Firestore"]
+      skills: ["MongoDB", "Firebase",  "PostgreSQL", "MySQL"]
     },
     {
       title: "Tools & Others",
       icon: Wrench,
-      skills: ["Git & GitHub", "Postman", "Vercel", "Figma"]
+      skills: ["Git & GitHub", "Postman", "Vercel", "Agile Methodologies", "Netlify",  "Docker"]
     },
     {
       title: "ERP & Business Systems",
