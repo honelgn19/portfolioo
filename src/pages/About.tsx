@@ -23,20 +23,22 @@ const About = () => {
 
             <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
               <p>
-                I'm a passionate Full-Stack Developer and ERP Systems Specialist
-                with a strong focus on building modern, scalable digital
-                solutions that drive business growth.
+                I'm a passionate Full-Stack Developer and M.Sc. Chemical
+                Engineering graduate who enjoys building technology that solves
+                real-world problems.
               </p>
+
               <p>
-                My journey in software development started with a deep curiosity
-                about how technology can transform traditional business
-                operations. Over the years, I've specialized in creating
-                powerful web applications and comprehensive ERP systems.
+                {" "}
+                Driven by continuous learning and innovation, I develop scalable
+                web applications and ERP solutions that help businesses operate
+                more efficiently.
               </p>
+
               <p>
-                I believe in writing clean, maintainable code and designing
-                intuitive user experiences that make complex systems feel simple
-                and powerful.
+                With software development expertise and industrial internship
+                experience, I create practical, user-friendly systems that
+                support business and industrial growth.
               </p>
             </div>
 

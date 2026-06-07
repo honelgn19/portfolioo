@@ -1,6 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ExternalLink, GitHub } from "lucide-react";
+import ezmErp from "../assets/ezmErp.jpg";
+import hotelQr from "../assets/admin.PNG";
+import digitalMenu from "../assets/menu.PNG";
 
 const Projects = () => {
   const projects = [
@@ -8,9 +11,9 @@ const Projects = () => {
       title: "EZM ERP System",
       description:
         "A comprehensive Enterprise Resource Planning solution designed to streamline business operations, inventory, accounting, and reporting for growing organizations.",
-      image: "/projects/ezm-erp.jpg",
+      image: ezmErp,
       category: "ERP System",
-      tech: ["React", "TypeScript", "Node.js", "MongoDB", "Tailwind"],
+      tech: ["React", "TypeScript", "Node.js", "Firebase", "Tailwind"],
       liveLink: "#",
       githubLink: "https://github.com/honelgn19/ezm-ERP",
     },
@@ -18,9 +21,9 @@ const Projects = () => {
       title: "Hotel QR Ordering System",
       description:
         "Contactless QR-based ordering platform for hotels and restaurants. Enables seamless menu browsing, real-time order tracking, and digital payments.",
-      image: "/projects/hotel-qr.jpg",
+      image: hotelQr,
       category: "SaaS Platform",
-      tech: ["Next.js", "TypeScript", "Firebase", "Shadcn UI", "Tailwind"],
+      tech: ["React.js", "TypeScript", "Firebase", "Shadcn UI", "Tailwind"],
       liveLink: "#",
       githubLink: "https://github.com/honelgn19/scan2order ",
     },
@@ -28,11 +31,21 @@ const Projects = () => {
       title: "Digital Menu Platform",
       description:
         "Multi-tenant digital menu management system with dynamic QR generation, real-time updates, and analytics dashboard for restaurants and cafes.",
-      image: "/projects/digital-menu.jpg",
+      image: digitalMenu,
       category: "Business Tool",
       tech: ["React", "TypeScript", "Express.js", "MongoDB", "Tailwind"],
       liveLink: "#",
       githubLink: "https://github.com/honelgn19/scan2order ",
+    },
+    {
+      title: "Car Spare Parts Store ERP System",
+      description:
+        "Comprehensive ERP system for managing car spare parts inventory, sales, customer orders, suppliers, and business analytics.",
+      image: "/public/car-spare-parts.jpg",
+      category: "ERP System",
+      tech: ["React.js", "TypeScript", "Node.js", "MongoDB", "Tailwind CSS"],
+      liveLink: "#",
+      githubLink: "https://github.com/honelgn19/car-spare-parts-erp",
     },
   ];
 

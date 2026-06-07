@@ -30,7 +30,7 @@ const Hero = () => {
        <h1 className="text-6xl md:text-7xl font-bold tracking-tighter leading-tight text-zinc-100">
   Hi, I'm{" "}
   <span className="bg-gradient-to-r from-white via-[#D9D9D9] to-[#A8A8A8] bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(255,255,255,0.15)]">
-    Honelgn
+    Honelgn Metaferiya
   </span>
 </h1>
 

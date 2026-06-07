@@ -5,52 +5,40 @@ import { Calendar, Briefcase, Award } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      year: "2024 - Present",
-      role: "Senior Full-Stack Developer & ERP Specialist",
-      company: "Freelance / Independent Projects",
-      description: "Developing custom ERP systems and SaaS platforms for businesses in East Africa. Focused on building scalable solutions that automate business processes and improve operational efficiency.",
+      year: "Oct 2025 - Present",
+      role: "Full-Stack Developer & ERP Systems Developer",
+      company: "Independent Projects",
+      description: "Focused on building real-world ERP systems, business management platforms, and scalable web applications. Continuously expanding expertise in modern full-stack technologies through hands-on project development.",
       highlights: [
-        "Built EZM ERP System from scratch",
-        "Developed multiple SaaS platforms",
-        "Implemented real-time business intelligence tools"
+        "Developed EZM ERP System",
+        "Built Scan2Order QR Ordering Platform",
+        "Developed Car Spare Parts Store ERP System"
       ],
       icon: Briefcase
     },
     {
-      year: "2023 - 2024",
-      role: "Full-Stack Developer",
-      company: "TechVision Solutions",
-      description: "Led the development of modern web applications and digital transformation projects. Specialized in creating seamless user experiences with robust backend architecture.",
+      year: "2025",
+      role: "Full-Stack Development Trainee",
+      company: "Udacity, EthioCoders & Evangadi Academy",
+      description: "Completed intensive full-stack development training programs covering modern frontend and backend technologies, database design, APIs, authentication, and deployment.",
       highlights: [
-        "Developed Hotel QR Ordering System",
-        "Integrated Firebase solutions for multiple clients",
-        "Optimized application performance by 60%"
+        "Graduated from Evangadi Full-Stack Program",
+        "Completed Udacity & EthioCoders Training",
+        "Built production-ready web applications"
       ],
       icon: Award
     },
     {
-      year: "2022 - 2023",
-      role: "Software Developer",
-      company: "Nexus Business Systems",
-      description: "Worked on enterprise-level business management systems with a strong focus on ERP modules and data-driven decision making tools.",
+      year: "2025",
+      role: "Full-Stack Developer",
+      company: "Portfolio & Clone Projects",
+      description: "Strengthened practical development skills by recreating popular large-scale applications and implementing industry-standard development practices.",
       highlights: [
-        "Built Digital Menu Platform",
-        "Developed custom CRM modules",
-        "Implemented secure multi-tenant architecture"
+        "Built Amazon Clone",
+        "Built Netflix Clone",
+        "Built Apple Website Clone"
       ],
       icon: Calendar
-    },
-    {
-      year: "2021 - 2022",
-      role: "Junior Full-Stack Developer",
-      company: "StartUp Ethiopia",
-      description: "Began professional journey building responsive web applications and learning enterprise software development practices.",
-      highlights: [
-        "Mastered React & TypeScript",
-        "Gained hands-on ERP development experience",
-        "Delivered 10+ client projects"
-      ],
-      icon: Award
     }
   ];
 

@@ -11,43 +11,48 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
+    setError(''); // Clear previous error
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    setError('');
 
     try {
       await emailjs.send(
-        "service_d27n86h",
-        "template_finx1lo",
+        "service_8uz0sy9",           // Service ID
+        "template_zlasf07",          // Template ID
         {
-          "From Name": formData.name,
-          "From Email": formData.email,
-          "Content": formData.message,
-          "Subject": `New Portfolio Message from ${formData.name}`,
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          subject: `New Portfolio Message from ${formData.name}`,
         },
-        "DK7Mgl7amcXyh4kOy"
+        "DK7Mgl7amcXyh4kOy"          // Public Key
       );
 
-      alert("✅ Message sent successfully! Thank you.");
+      setSubmitted(true);
       setFormData({ name: "", email: "", message: "" });
 
+      // Auto hide success message after 5 seconds
+      setTimeout(() => setSubmitted(false), 5000);
+
     } catch (error: any) {
-      console.error("Full Error:", error);
-      alert("Failed to send. Please check F12 console.");
+      console.error("EmailJS Error:", error);
+      setError("Failed to send message. Please try again.");
     } finally {
       setLoading(false);
     }
   };
-
-  // ... rest of your return JSX stays the same
 
   return (
     <section id="contact" className="py-24 bg-[#121212] border-t border-white/10">
@@ -133,6 +138,16 @@ const Contact = () => {
                   />
                 </div>
 
+                {/* Status Messages */}
+                {error && (
+                  <p className="text-red-400 text-sm text-center font-medium">{error}</p>
+                )}
+                {submitted && (
+                  <p className="text-emerald-400 text-sm text-center font-medium">
+                    ✅ Message sent successfully! I'll get back to you soon.
+                  </p>
+                )}
+
                 {/* Submit Button */}
                 <motion.button
                   whileHover={{ scale: 1.02 }}
@@ -214,14 +229,14 @@ const Contact = () => {
                     <p className="text-sm text-gray-400">Quick chat</p>
                   </div>
                 </a>
-                {/* New: Telephone */}
-                <a href="tel:+251911234567" className="flex items-center gap-4 p-5 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#C0C0C0]/30 rounded-2xl transition-all group">
+
+                <a href="tel:+251937991885" className="flex items-center gap-4 p-5 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#C0C0C0]/30 rounded-2xl transition-all group">
                   <div className="w-11 h-11 rounded-xl bg-white/10 flex items-center justify-center group-hover:bg-[#C0C0C0]/10">
                     <Phone size={26} className="text-[#C0C0C0]" />
                   </div>
                   <div>
                     <p className="font-medium">Call Me</p>
-                    <p className="text-sm text-gray-400">+251 937 991 885 </p>
+                    <p className="text-sm text-gray-400">+251 937 991 885</p>
                   </div>
                 </a>
               </div>

@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
-import { motion } from 'framer-motion';
+import React, { useState } from "react";
+import { Menu, X } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,15 +18,18 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#121212]/80 backdrop-blur-xl border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
-          
           {/* Logo */}
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#C0C0C0] to-[#D9D9D9] flex items-center justify-center">
               <span className="text-black font-bold text-xl">H</span>
             </div>
             <div>
-              <h1 className="text-2xl font-bold tracking-tight text-white">Honelgn</h1>
-              <p className="text-[10px] text-gray-500 -mt-1">FULL-STACK DEVELOPER</p>
+              <h1 className="text-2xl font-bold tracking-tight text-white">
+                Honelgn
+              </h1>
+              <p className="text-[10px] text-gray-500 -mt-1">
+                FULL-STACK DEVELOPER
+              </p>
             </div>
           </div>
 

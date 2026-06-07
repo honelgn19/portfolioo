@@ -1,40 +1,53 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Code2, Server, Database, Wrench, Building2 } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Code2, Server, Database, Wrench, Building2 } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
     {
       title: "Frontend",
       icon: Code2,
-      skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Shadcn UI"]
+      skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Shadcn UI"],
     },
     {
       title: "Backend",
       icon: Server,
-      skills: ["Node.js", "Express.js", "REST APIs"]
+      skills: ["Node.js", "Express.js", "REST APIs"],
     },
     {
       title: "Database & Cloud",
       icon: Database,
-      skills: ["MongoDB", "Firebase",  "PostgreSQL", "MySQL"]
+      skills: ["MongoDB", "Firebase", "PostgreSQL", "MySQL"],
     },
     {
       title: "Tools & Others",
       icon: Wrench,
-      skills: ["Git & GitHub", "Postman", "Vercel", "Agile Methodologies", "Netlify",  "Docker"]
+      skills: [
+        "Git & GitHub",
+        "Postman",
+        "Vercel",
+        "Agile Methodologies",
+        "Netlify",
+        "Docker",
+      ],
     },
     {
       title: "ERP & Business Systems",
       icon: Building2,
-      skills: ["ERP Development", "SaaS Platforms", "Business Process Automation"]
-    }
+      skills: [
+        "ERP Development",
+        "SaaS Platforms",
+        "Business Process Automation",
+      ],
+    },
   ];
 
   return (
-    <section id="skills" className="py-24 bg-[#1A1A1A] border-t border-white/10">
+    <section
+      id="skills"
+      className="py-24 bg-[#1A1A1A] border-t border-white/10"
+    >
       <div className="max-w-7xl mx-auto px-6">
-        
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
