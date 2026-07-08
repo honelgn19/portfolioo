@@ -4,6 +4,7 @@ import { ExternalLink, GitHub } from "lucide-react";
 import ezmErp from "../assets/ezmErp.jpg";
 import hotelQr from "../assets/admin.PNG";
 import digitalMenu from "../assets/menu.PNG";
+import careSpare from "../assets/careSpare.PNG"
 
 const Projects = () => {
   const projects = [
@@ -41,7 +42,7 @@ const Projects = () => {
       title: "Car Spare Parts Store ERP System",
       description:
         "Comprehensive ERP system for managing car spare parts inventory, sales, customer orders, suppliers, and business analytics.",
-      image: "/public/car-spare-parts.jpg",
+      image: careSpare,
       category: "ERP System",
       tech: ["React.js", "TypeScript", "Node.js", "MongoDB", "Tailwind CSS"],
       liveLink: "#",
